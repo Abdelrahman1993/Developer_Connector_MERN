@@ -17,6 +17,8 @@ mongoose.connect(database)
 
 app.get('/', (req, res) => res.send('hello'))
 
+//app.use();
+//app.use(bodyParser.json());
 app.use('/api/users', users);
 app.use('/api/posts', posts);
 app.use('/api/profile', profile);
